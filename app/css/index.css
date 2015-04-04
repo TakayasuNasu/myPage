@@ -1,0 +1,126 @@
+.text-eye-catch {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
+@media (max-width: 767px) {
+  .text-eye-catch h1 {
+    font-size: 2.5em;
+    color: #fff; }
+  .text-eye-catch h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: -10px; }
+  .text-eye-catch > .btn {
+    margin-bottom: 20px; }
+  .l-eye_catch {
+    background: url(../images/index/home.jpg) no-repeat center center;
+    display: table;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  #products-detail {
+    background: url(../images/room3.jpg) no-repeat center center;
+    display: table;
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+@media (min-width: 768px) {
+  .text-eye-catch h1, .text-eye-catch h3 {
+    font-size: 4em;
+    color: #fff; }
+  .l-eye_catch {
+    background: url(../images/index/home.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  #products-detail {
+    background: url(../images/room3.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+/* Bootstrap Navigation styles
+-------------------------------------------------- */
+.navbar-default .navbar-nav > .active {
+  color: #000;
+  background: #BBDDFF; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #000;
+  background: #BBDDFF; }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  background-color: #f5f5f5;
+  padding: 20px 0; }
+
+/* Content styles
+-------------------------------------------------- */
+/* Products */
+#products {
+  background-color: #306d9f;
+  color: #ffffff;
+  padding-bottom: 20px; }
+
+#products-detail .panel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0.85; }
+
+h3, h2, .p-center {
+  text-align: center; }
+
+.service > p {
+  text-align: center; }
+
+.enimg {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; }
+
+.section {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px; }
+
+.video {
+  margin-top: 50px; }
+
+.content-img {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
