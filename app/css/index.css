@@ -1,7 +1,8 @@
 .text-eye-catch {
   display: table-cell;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-family: 'Josefin Sans'; }
 
 @media (max-width: 767px) {
   .text-eye-catch h1 {
@@ -13,8 +14,8 @@
     margin-top: -10px; }
   .text-eye-catch > .btn {
     margin-bottom: 20px; }
-  .l-eye_catch {
-    background: url(../images/index/home.jpg) no-repeat center center;
+  .l-eye-catch {
+    background: url(/images/index/home.jpg) no-repeat center center;
     display: table;
     width: 100%;
     height: auto;
@@ -24,8 +25,8 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-  #products-detail {
-    background: url(../images/room3.jpg) no-repeat center center;
+  .l-middle-image {
+    background: url(/images/index/middle01.jpg) no-repeat center center;
     display: table;
     width: 100%;
     height: auto;
@@ -39,8 +40,8 @@
   .text-eye-catch h1, .text-eye-catch h3 {
     font-size: 4em;
     color: #fff; }
-  .l-eye_catch {
-    background: url(../images/index/home.jpg) no-repeat center center fixed;
+  .l-eye-catch {
+    background: url(/images/index/home.jpg) no-repeat center center fixed;
     display: table;
     height: 100vh;
     position: relative;
@@ -49,10 +50,10 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-  #products-detail {
-    background: url(../images/room3.jpg) no-repeat center center fixed;
+  .l-middle-image {
+    background: url(/images/index/middle01.jpg) no-repeat center center fixed;
     display: table;
-    height: 100%;
+    height: 100vh;
     position: relative;
     width: 100%;
     -webkit-background-size: cover;
@@ -60,34 +61,56 @@
     -o-background-size: cover;
     background-size: cover; } }
 
-/* Bootstrap Navigation styles
--------------------------------------------------- */
-.navbar-default .navbar-nav > .active {
-  color: #000;
-  background: #BBDDFF; }
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #000;
-  background: #BBDDFF; }
-
-/* Sticky footer styles
--------------------------------------------------- */
-.footer {
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  background-color: #f5f5f5;
-  padding: 20px 0; }
-
 /* Content styles
 -------------------------------------------------- */
+/* Result */
+.results-box {
+  padding: 20px 0px; }
+
+.results-box-thumnail {
+  position: relative;
+  overflow: hidden;
+  visibility: hidden; }
+
+.thumnail-caption {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  background: rgba(66, 139, 202, 0.75);
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  text-align: center;
+  color: #fff !important;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.results-box-thumnail:hover .thumnail-caption {
+  top: 0%; }
+
+.caption-table th {
+  text-align: center; }
+
+/* MiddleImage */
+.middle-image-text {
+  margin: 0 auto;
+  padding-top: 70px;
+  color: #fff;
+  visibility: hidden; }
+  .middle-image-text p {
+    margin: 10px 0px; }
+
 /* Products */
 #products {
   background-color: #306d9f;
   color: #ffffff;
   padding-bottom: 20px; }
 
-#products-detail .panel {
+.l-middle-image .panel {
   margin-top: 50px;
   margin-bottom: 50px;
   opacity: 0.85; }

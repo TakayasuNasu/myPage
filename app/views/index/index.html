@@ -1,7 +1,119 @@
 
-<div class="l-eye_catch">
-  <div class="text-eye-catch">
-    <h1>Hello World</h1>
-    <h3>Bootstrap-based one column layout</h3>
+<div class="l-eye-catch">
+  <div zum-waypoint="waypoints"
+      down="eyeCatch.on"
+      up="eyeCatch.off">
+  </div>
+  <div class="text-eye-catch" ng-class="{'animated zoomIn': waypoints.eyeCatch.on}">
+    <h1>Welcome to i-nasu.com</h1>
+    <h3>Wind clear of that Japanese</h3>
   </div>
 </div>
+
+<section class="l-results text-center">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="fs-display-2">Premier League Results</h1>
+
+        <div class="row">
+
+          <div class="col-md-4 results-box" ng-repeat="item in index.contents">
+            <div zum-waypoint="waypoints"
+                 down="down.item_{{$index}}"
+                 up="up.item_{{$index}}"
+                 offset="20%">
+            </div>
+            <h2 class="fs-headline">
+              {{item.goalsHomeTeam}} - {{item.goalsAwayTeam}}
+            </h2>
+
+            <div class="results-box-thumnail"
+                 ng-class="{
+                    'animated fadeInDown': waypoints.down.item_{{$index}}
+            }">
+              <div class="thumnail-caption">
+                <p>
+                  <table class="table caption-table">
+                    <tr>
+                      <th>
+                        HomeTeam
+                      </th>
+                      <th>
+                        AwayTeam
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        {{item.homeTeam}}
+                      </td>
+                      <td>
+                        {{item.awayTeam}}
+                      </td>
+                    </tr>
+                  </table>
+                </p>
+                <h4>{{item.date | date: 'yyyy/MM/dd HH:mm'}}</h4>
+              </div>
+              <lx-thumbnail
+                thumbnail-src="{{item.image}}"
+                thumbnail-height="{{ 200 }}"></lx-thumbnail>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="l-middle-image">
+  <div zum-waypoint="waypoints"
+       down="flags.on"
+       up="flags.off"
+       offset="-50%">
+  </div>
+  <div class="container">
+    <div class="middle-image-text" ng-class="{'animated bounceInLeft': waypoints.flags.on}">
+      <p class="fs-display-1">
+        Never
+      </p>
+      <p class="fs-subhead">
+        Learn from the mistakes of others. You can’t live long enough to make them all yourself.
+      </p>
+      <p class="fs-subhead">
+        Anyone who has never made a mistake has never tried anything new.
+      </p>
+      <p class="fs-subhead">
+        You can’t get away from yourself by moving from one place to another.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="l-standings text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="fs-display-2">Standings</h1>
+         <div class="card mt++">
+
+          <lx-tabs links-tc="light" links-bgc="blue-grey-800" indicator="yellow-500" no-divider="true">
+            <div ng-repeat="league in index.allStangings">
+              <lx-tab heading="{{league.name}}">
+                <div my-stangings standings="league.result.standing"></div>
+              </lx-tab>
+            </div>
+          </lx-tabs>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
