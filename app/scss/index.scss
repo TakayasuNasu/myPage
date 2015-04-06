@@ -1,4 +1,6 @@
 
+@import "const";
+
 .text-eye-catch {
   display: table-cell;
   text-align: center;
@@ -11,11 +13,11 @@
   .text-eye-catch {
     h1 {
       font-size: 2.5em;
-      color: #fff;
+      color: $textEyeCatchColor;
     }
     h3 {
       font-size: 1.5em;
-      color: #fff;
+      color: $textEyeCatchColor;
       margin-top: -10px;
     }
     > .btn {
@@ -27,7 +29,7 @@
     background: url(/images/index/home.jpg) no-repeat center center;
     display: table;
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: relative;
 
     margin-top: 50px;
@@ -42,7 +44,7 @@
     background: url(/images/index/middle01.jpg) no-repeat center center;
     display: table;
     width: 100%;
-    height: auto;
+    height: $middleImageHeight;
     position: relative;
 
     -webkit-background-size: cover;
@@ -56,7 +58,7 @@
 
   .text-eye-catch h1,.text-eye-catch h3 {
     font-size: 4em;
-    color: #fff;
+    color: $textEyeCatchColor;
   }
 
   .l-eye-catch {
@@ -75,7 +77,7 @@
   .l-middle-image {
     background: url(/images/index/middle01.jpg) no-repeat center center fixed;
     display: table;
-    height: 100vh;
+    height: $middleImageHeight;
     position: relative;
     width: 100%;
     -webkit-background-size: cover;
