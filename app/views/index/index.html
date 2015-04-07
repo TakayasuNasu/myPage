@@ -34,8 +34,10 @@
                  ng-class="{
                     'animated fadeInDown': waypoints.down.item_{{$index}}
             }">
+              <div class="img">
+                <img src="{{item.image}}">
+              </div>
               <div class="thumnail-caption">
-                <p>
                   <table class="table caption-table">
                     <tr>
                       <th>
@@ -54,12 +56,8 @@
                       </td>
                     </tr>
                   </table>
-                </p>
                 <h4>{{item.date | date: 'yyyy/MM/dd HH:mm'}}</h4>
               </div>
-              <lx-thumbnail
-                thumbnail-src="{{item.image}}"
-                thumbnail-height="{{ 200 }}"></lx-thumbnail>
             </div>
           </div>
 
@@ -114,5 +112,4 @@
     </div>
   </div>
 </section>
-
 

@@ -70,7 +70,23 @@
 .results-box-thumnail {
   position: relative;
   overflow: hidden;
-  visibility: hidden; }
+  padding-left: 15px; }
+  .results-box-thumnail .img {
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 1;
+    overflow: hidden; }
+    .results-box-thumnail .img:nth-child(n) {
+      margin-right: 5px; }
+    .results-box-thumnail .img:first-child {
+      margin-left: -15px; }
+    .results-box-thumnail .img:last-child {
+      margin-right: 0; }
+    .results-box-thumnail .img img {
+      display: block;
+      margin: 0;
+      padding: 0;
+      height: auto; }
 
 .thumnail-caption {
   position: absolute;
@@ -89,8 +105,23 @@
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
 
+.img img {
+  width: -webkit-calc(100% + 40px) !important;
+  width: calc(100% + 40px) !important;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.5s;
+  transition: opacity 0.35s, transform 0.5s;
+  -moz-transition: opacity 0.35s, -moz-transform 0.5s;
+  -o-transition: opacity 0.35s, -o-transform 0.5s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+  -ms-transform: translate3d(-40px, 0, 0); }
+
 .results-box-thumnail:hover .thumnail-caption {
   top: 0%; }
+.results-box-thumnail:hover .img img {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(-40px, 0, 0); }
 
 .caption-table th {
   text-align: center; }
