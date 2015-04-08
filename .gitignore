@@ -1,5 +1,7 @@
 /build/
 
+/app/js/config/const.js
+
 /app/index.html
 
 /app/bower_components/
