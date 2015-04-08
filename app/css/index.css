@@ -65,16 +65,17 @@
 -------------------------------------------------- */
 /* Result */
 .results-box {
+  margin: 20px 0px;
   padding: 20px 0px; }
 
 .results-box-thumnail {
+  max-height: 250px;
   position: relative;
   overflow: hidden;
   padding-left: 15px;
   visibility: hidden; }
   .results-box-thumnail .img {
     position: relative;
-    margin-bottom: 50px;
     z-index: 1;
     overflow: hidden; }
     .results-box-thumnail .img:nth-child(n) {
@@ -100,6 +101,7 @@
   text-align: center;
   color: #fff !important;
   z-index: 2;
+  margin-right: 5px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;

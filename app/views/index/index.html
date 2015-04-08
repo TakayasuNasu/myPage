@@ -22,9 +22,9 @@
 
           <div class="col-md-4 results-box" ng-repeat="item in index.contents">
             <div zum-waypoint="waypoints"
-                 down="item_{{$index}}.down"
-                 up="item_{{$index}}.up"
-                 offset="10%">
+                 down="down.item_{{$index}}"
+                 up="up.item_{{$index}}"
+                 offset="20%">
             </div>
             <h2 class="fs-headline">
               {{item.goalsHomeTeam}} - {{item.goalsAwayTeam}}
@@ -32,7 +32,7 @@
 
             <div class="results-box-thumnail"
                  ng-class="{
-                    'animated fadeInDown': waypoints.item_{{$index}}.down
+                    'animated fadeInDown': waypoints.down.item_{{$index}}
             }">
               <div class="img">
                 <img src="{{item.image}}">
@@ -56,7 +56,10 @@
                       </td>
                     </tr>
                   </table>
-                <h4>{{item.date | date: 'yyyy/MM/dd HH:mm'}}</h4>
+                <h4>
+                  <i class="mdi mdi-alarm"></i>
+                  {{item.date | date: 'yyyy/MM/dd HH:mm'}}
+                </h4>
               </div>
             </div>
           </div>
@@ -72,11 +75,12 @@
 <section class="l-middle-image">
   <div zum-waypoint="waypoints"
        down="flags.on"
-       up="flags.off"
-       offset="-10%">
+       up="flags.on"
+       offset="-50%">
   </div>
   <div class="container">
-    <div class="middle-image-text" ng-class="{'animated bounceInLeft': waypoints.flags.on}">
+    <div class="middle-image-text" ng-class="{'animated bounceInLeft': waypoints.flags.on,
+    'animated bounceInLeft': waypoints.flags.on}">
       <p class="fs-display-1">
         Never
       </p>
