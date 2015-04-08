@@ -70,7 +70,8 @@
 .results-box-thumnail {
   position: relative;
   overflow: hidden;
-  padding-left: 15px; }
+  padding-left: 15px;
+  visibility: hidden; }
   .results-box-thumnail .img {
     position: relative;
     margin-bottom: 50px;
