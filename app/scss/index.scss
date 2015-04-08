@@ -92,15 +92,57 @@
 /* Content styles
 -------------------------------------------------- */
 
+/* EyeCatch */
+.ghost-button {
+  display: inline-block;
+  margin: 20px 0px;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out;
+  &:hover, &:active {
+    color: #66d8ed;
+    border-color: #66d8ed;
+    transition: border-color 0.4s ease-in, color 0.4s ease-in;
+  }
+}
+
 /* Result */
 .results-box {
+  margin: 20px 0px;
   padding: 20px 0px;
 }
 
 .results-box-thumnail {
-  position:relative;
-  overflow:hidden;
+  max-height: 250px;
+  position: relative;
+  overflow: hidden;
+  padding-left: 15px;
   visibility: hidden;
+  .img {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &:nth-child(n) {
+      margin-right: 5px;
+    }
+    &:first-child {
+      margin-left: -15px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      display: block;
+      margin: 0;
+      padding: 0;
+      height: auto;
+    }
+  }
 }
 
 .thumnail-caption {
@@ -114,6 +156,7 @@
   text-align:center;
   color:#fff !important;
   z-index:2;
+  margin-right: 5px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -121,8 +164,27 @@
   transition: all 0.5s ease-in-out;
 }
 
-.results-box-thumnail:hover .thumnail-caption {
-  top:0%;
+.img img {
+  width: -webkit-calc(100% + 40px) !important;
+  width: calc(100% + 40px) !important;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.5s;
+  transition: opacity 0.35s, transform 0.5s;
+  -moz-transition: opacity 0.35s, -moz-transform 0.5s;
+  -o-transition: opacity 0.35s, -o-transform 0.5s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+  -ms-transform: translate3d(-40px, 0, 0);
+}
+
+.results-box-thumnail:hover {
+  .thumnail-caption {
+    top: 0%;
+  }
+  .img img {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(-40px, 0, 0);
+  }
 }
 
 .caption-table th {

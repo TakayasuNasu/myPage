@@ -4,7 +4,6 @@ var config = require('../config');
 gulp.task('watch', ['inject'], function () {
   var watcher = gulp.watch([
     config.target,
-    config.app.css,
     config.app.js,
     config.app.views,
     config.app.scss,
