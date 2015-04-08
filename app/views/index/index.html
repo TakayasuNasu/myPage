@@ -22,9 +22,9 @@
 
           <div class="col-md-4 results-box" ng-repeat="item in index.contents">
             <div zum-waypoint="waypoints"
-                 down="down.item_{{$index}}"
-                 up="up.item_{{$index}}"
-                 offset="20%">
+                 down="item_{{$index}}.down"
+                 up="item_{{$index}}.up"
+                 offset="10%">
             </div>
             <h2 class="fs-headline">
               {{item.goalsHomeTeam}} - {{item.goalsAwayTeam}}
@@ -32,7 +32,7 @@
 
             <div class="results-box-thumnail"
                  ng-class="{
-                    'animated fadeInDown': waypoints.down.item_{{$index}}
+                    'animated fadeInDown': waypoints.item_{{$index}}.down
             }">
               <div class="img">
                 <img src="{{item.image}}">
@@ -72,7 +72,8 @@
 <section class="l-middle-image">
   <div zum-waypoint="waypoints"
        down="flags.on"
-       up="flags.off">
+       up="flags.off"
+       offset="-10%">
   </div>
   <div class="container">
     <div class="middle-image-text" ng-class="{'animated bounceInLeft': waypoints.flags.on}">
