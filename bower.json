@@ -21,6 +21,7 @@
     "at-table": "~1.0.4",
     "angular-waypoints": "~1.0.1",
     "animate.css": "~3.2.3",
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "angular-scroll": "~0.6.5"
   }
 }
