@@ -7,7 +7,7 @@
   <div class="text-eye-catch" ng-class="{'animated zoomIn': waypoints.eyeCatch.on}">
     <h1>Welcome to i-nasu.com</h1>
     <h3>Wind clear of that Japanese</h3>
-    <a class="btn ghost-button" ng-click="index.scrollTo('standing')">To Standings</a>
+    <a class="btn ghost-button" href="#standing" du-smooth-scroll duration="2000">To Standings</a>
   </div>
 </div>
 
@@ -31,14 +31,13 @@
               {{item.goalsHomeTeam}} - {{item.goalsAwayTeam}}
             </h2>
 
-            <div class="results-box-thumnail"
+            <div class="results-box-thumnail clearfix"
                  ng-class="{
-                    'animated fadeInDown': waypoints.down.item_{{$index}}
-            }">
+                    'animated fadeInDown': waypoints.down.item_{{$index}}}">
               <div class="img">
                 <img src="{{item.image}}">
-              </div>
-              <div class="thumnail-caption">
+
+                <div class="thumnail-caption">
                   <table class="table caption-table">
                     <tr>
                       <th>
@@ -57,10 +56,12 @@
                       </td>
                     </tr>
                   </table>
-                <h4>
-                  <i class="mdi mdi-alarm"></i>
-                  {{item.date | date: 'yyyy/MM/dd HH:mm'}}
-                </h4>
+                  <h4>
+                    <i class="mdi mdi-alarm"></i>
+                    {{item.date | date: 'yyyy/MM/dd HH:mm'}}
+                  </h4>
+                </div>
+
               </div>
             </div>
           </div>

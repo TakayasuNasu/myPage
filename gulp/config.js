@@ -13,6 +13,7 @@ module.exports = {
     root:   app,
     css:    app + '/css/*.css',
     scss:   app + '/scss/*.scss',
+    appJs:  app + '/js/app.js',
     js:     app + '/js/**/*.js',
     images: app + '/images/**/*.{jpg,JPG,png,PNG,gif,GIF}',
     views:  app + '/views/**/*.html',

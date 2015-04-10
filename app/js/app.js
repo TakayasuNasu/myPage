@@ -3,5 +3,6 @@ var app = angular.module('i-nasu', [
   'ui.router',
   'lumx',
   'angular-table',
-  'zumba.angular-waypoints'
+  'zumba.angular-waypoints',
+  'duScroll'
 ]);

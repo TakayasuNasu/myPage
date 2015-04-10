@@ -5,6 +5,7 @@ var files          = mainBowerFiles();
 var config         = require('../config');
 
 files.push(config.app.css);
+files.push(config.app.appJs);
 files.push(config.app.js);
 
 gulp.task('inject', ['sass'], function () {
