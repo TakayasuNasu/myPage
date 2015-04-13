@@ -6,7 +6,8 @@ module.exports = {
 
   root: {
     root: root,
-    bower: root + 'bower_components/**/*.*'
+    bower: root + 'bower_components/**/*.*',
+    karma: root + 'karma.conf.js'
   },
 
   app: {
@@ -17,6 +18,7 @@ module.exports = {
     js:     app + '/js/**/*.js',
     images: app + '/images/**/*.{jpg,JPG,png,PNG,gif,GIF}',
     views:  app + '/views/**/*.html',
+    spec:   app + '/spec/**/*.js',
     bower:  app + '/bower_components/**/*.*',
     dest: {
       css: app + '/css'
@@ -25,6 +27,7 @@ module.exports = {
     ignore: {
       views: '!' + app + '/views/index.html'
     }
+
   },
 
   build: {
