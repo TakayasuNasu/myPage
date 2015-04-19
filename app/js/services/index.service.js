@@ -5,6 +5,7 @@ app.factory('IndexService', ['Const', 'FootballData', 'FlickrPhotos',
   function(Const, FootballData, FlickrPhotos) {
     var results = FootballData.load();
     var photos  = FlickrPhotos.load({tags: 'Manchester United'});
+    console.log(photos);
 
     return {
 
