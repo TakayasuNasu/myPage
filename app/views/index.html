@@ -10,9 +10,9 @@
   <meta property="og:image:width" content="300" />
   <meta property="og:image:height" content="300" />
   <meta property="og:site_name" content="i-nasu.com">
-  <meta property="og:title" content="Wind clear of that Japan">
+  <meta property="og:title" content="i-nasu.com">
   <meta property="og:type" content="article">
-  <meta property="og:description" content="Welcome to www.i-nasu.com This site is using the AngulaJs">
+  <meta property="og:description" content="Welcome to www.i-nasu.com This site is using the AngulaJs. The website features live video streaming of many UEFA competitions together with an extensive video archive and mobile service. In addition, via the Football Europe section">
   <meta property="og:url" content="http://www.i-nasu.com">
   <meta property=og:locale content=ja_JP>
 
@@ -26,9 +26,23 @@
 </head>
 <body>
 
-  <div ng-include="'views/components/navbar.html'"></div>
+  <div ng-include="'views/components/navbar.html'" id="nav"></div>
 
   <div ui-view class="contents"></div>
+
+  <div ng-controller="pageTopController"
+       ng-show="pageTop.isShow"
+       ng-class="{'animated fadeInDown': pageTop.isShow}"
+       class="hidden-xs"
+       id="page-top">
+    <p>
+      <a href="#nav" du-smooth-scroll duration="2000" id="move-page-top">
+        <button class="btn btn--m btn--grey btn--fab" lx-ripple>
+          <i class="mdi mdi-chevron-up"></i>
+        </button>
+      </a>
+    </p>
+  </div>
 
   <div ng-include="'views/components/footer.html'"></div>
 
