@@ -16,6 +16,8 @@
   <meta property="og:url" content="http://www.i-nasu.com">
   <meta property=og:locale content=ja_JP>
 
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
   <!-- bower:css -->
   <!-- bower installed css files will go here... -->
   <!-- endinject -->
@@ -30,19 +32,7 @@
 
   <div ui-view class="contents"></div>
 
-  <div ng-controller="pageTopController"
-       ng-show="pageTop.isShow"
-       ng-class="{'animated fadeInDown': pageTop.isShow}"
-       class="hidden-xs"
-       id="page-top">
-    <p>
-      <a href="#nav" du-smooth-scroll duration="2000" id="move-page-top">
-        <button class="btn btn--m btn--grey btn--fab" lx-ripple>
-          <i class="mdi mdi-chevron-up"></i>
-        </button>
-      </a>
-    </p>
-  </div>
+  <div my-include="views/components/toTop.html"></div>
 
   <div ng-include="'views/components/footer.html'"></div>
 
