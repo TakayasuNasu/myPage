@@ -34,6 +34,12 @@ ul.legals {
   color: #000;
   background: #BBDDFF; }
 
+.dropdown-menu {
+  display: block; }
+
+.nav-btn {
+  padding-top: 10px; }
+
 /* Sticky footer styles
 -------------------------------------------------- */
 .footer {
