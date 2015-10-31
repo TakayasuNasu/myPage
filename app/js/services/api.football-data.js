@@ -3,7 +3,7 @@ var app = angular.module('i-nasu');
 
 app.factory('FootballData', ['$resource', 'Const',
   function($resource, Const) {
-    var footballResult = $resource(Const.baseApiUrlFootballData + 'soccerseasons/354/fixtures/?timeFrame=p14',
+    var footballResult = $resource(Const.baseApiUrlFootballData + 'soccerseasons/398/fixtures/?timeFrame=p14',
       {},
       {
         'load':{
