@@ -5,12 +5,12 @@
 .text-eye-catch h1{font-size:2.5em;color:#fff}
 .text-eye-catch h3{font-size:1.5em;color:#fff;margin-top:-10px}
 .text-eye-catch>.btn{margin-bottom:20px}
-.l-eye-catch{background:url(/images/index/home.jpg)center center no-repeat;height:100vh;margin-top:50px;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
-.l-middle-image{background:url(/images/index/middle01.jpg)center center no-repeat;height:60vh;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}}
+.l-eye-catch{background:url(/myPage/images/index/home.jpg)center center no-repeat;height:100vh;margin-top:50px;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+.l-middle-image{background:url(/myPage/images/index/middle01.jpg)center center no-repeat;height:60vh;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}}
 @media (min-width:768px){.l-eye-catch,.l-middle-image{display:table;position:relative}
 .text-eye-catch h1,.text-eye-catch h3{font-size:4em;color:#fff}
-.l-eye-catch{background:url(/images/index/home.jpg)center center no-repeat fixed;height:100vh;width:100%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
-.l-middle-image{background:url(/images/index/middle01.jpg)center center no-repeat fixed;height:60vh;width:100%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}}
+.l-eye-catch{background:url(/myPage/images/index/home.jpg)center center no-repeat fixed;height:100vh;width:100%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+.l-middle-image{background:url(/myPage/images/index/middle01.jpg)center center no-repeat fixed;height:60vh;width:100%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}}
 .ghost-button{display:inline-block;margin:20px 0;width:200px;padding:8px;color:#fff;border:2px solid #fff;outline:0;text-decoration:none;transition:border-color .3s ease-out,color .3s ease-out}
 .ghost-button:active,.ghost-button:hover{color:#66d8ed;border-color:#66d8ed;transition:border-color .4s ease-in,color .4s ease-in}
 .results-box{margin:20px 0;padding:20px 0}
