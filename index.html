@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="i-nasu">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset=UTF-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="UEFA,Union of European Football Associations,Union Européenne de Football Association,Europe,Football,Soccer,Calcio,Fussball,Fußball,Fútbol,Futebol,UEFA Champions League,Champions League,UEFA Cup, EURO 2008, EURO 2012,European Championship,FIFA,FIFA World Cup,World Cup,Michel Platini,MatchCentre,Match Centre,Football Europe,Fantasy Football,Fanzone,Magazine,Live Video,Replay,Vodcast,Mobile,Stadium,Training Ground,Referee,Players,Coach" />
+  <meta name="description" content="Europe's football website, UEFA.com, is the official site of UEFA, the Union of European Football Associations, and the governing body of football in Europe. UEFA organises some of the most famous and prestigious football competitions on the European continent including the UEFA Champions League, the UEFA Cup and the UEFA European Football Championship (UEFA EURO 2012, UEFA EURO 2016, etc). The website features live video streaming of many UEFA competitions together with an extensive video archive and mobile service. In addition, via the Football Europe section, there is coverage of the 54 national association domestic leagues, the route to UEFA's club competitions; the UEFA Organisation section covers all corporate activities at UEFA, while Training Ground promotes grassroots football initiatives and elearning modules." />
+  <title>My index</title>
+  <meta property="og:image" content="http://www.i-nasu.com/images/index/home.jpg" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:site_name" content="i-nasu.com">
+  <meta property="og:title" content="i-nasu.com">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Welcome to www.i-nasu.com This site is using the AngulaJs. The website features live video streaming of many UEFA competitions together with an extensive video archive and mobile service. In addition, via the Football Europe section">
+  <meta property="og:url" content="http://www.i-nasu.com">
+  <meta property=og:locale content=ja_JP>
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/mdi/css/materialdesignicons.css">
+  <link rel="stylesheet" href="/bower_components/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/bower_components/lumx/dist/lumx.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/css/app.min.css">
+  <!-- endinject -->
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic' rel='stylesheet'>
+</head>
+<body>
+
+  <div ng-include="'views/components/navbar.html'" id="nav"></div>
+
+  <div ui-view class="contents"></div>
+
+  <div my-include="views/components/toTop.html"></div>
+
+  <div ng-include="'views/components/footer.html'"></div>
+
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/velocity/velocity.js"></script>
+  <script src="/bower_components/velocity/velocity.ui.js"></script>
+  <script src="/bower_components/moment/moment.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/bower_components/at-table/dist/angular-table.js"></script>
+  <script src="/bower_components/jquery-waypoints/waypoints.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/bower_components/angular-scroll/angular-scroll.js"></script>
+  <script src="/bower_components/lumx/dist/lumx.js"></script>
+  <script src="/bower_components/angular-waypoints/dist/angular-waypoints.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="/js/app.min.js"></script>
+  <!-- endinject -->
+
+  <div id="fb-root"></div>
+  <div id="fb-root"></div>
+  <script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=216727715118030&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+</html>
