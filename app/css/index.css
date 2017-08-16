@@ -140,6 +140,7 @@
 .results-box-thumnail:hover .thumnail-caption {
   left: 0%;
   opacity: 1; }
+
 .results-box-thumnail:hover .img img {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);

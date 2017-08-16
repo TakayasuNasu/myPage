@@ -51,5 +51,5 @@ module.exports = {
 
   target: app + '/views/index.html',
 
-  host: '192.168.33.33'
+  host: 'localhost'
 };

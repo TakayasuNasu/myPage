@@ -11,7 +11,7 @@ app.factory('IndexService', ['Const', 'FootballData', 'FlickrPhotos',
       getContents: function() {
         var returnContents = [];
         results.$promise.then(function(resultList) {
-          angular.forEach(resultList, function(result, key) {
+          angular.forEach(resultList.fixtures, function(result, key) {
             result.image = photos.items[key].media.m;
             returnContents.push(result);
           });

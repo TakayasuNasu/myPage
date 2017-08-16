@@ -3,12 +3,12 @@ var app = angular.module('i-nasu');
 
 app.factory('FootballData', ['$resource', 'Const',
   function($resource, Const) {
-    var footballResult = $resource(Const.baseApiUrlFootballData + 'soccerseasons/398/fixtures/?timeFrame=p14',
+    var footballResult = $resource(Const.baseApiUrlFootballData + '/445/fixtures?timeFrame=p14',
       {},
       {
         'load':{
           'method': 'GET',
-          isArray: true,
+          isArray: false,
           headers: {'X-Auth-Token': Const.authToken}
         }
       });
@@ -20,7 +20,7 @@ app.factory('FootballData', ['$resource', 'Const',
       },
 
       getLeagueStandings: function(leaguId) {
-        var league = $resource(Const.baseApiUrlFootballTable + 'soccerseasons/' + leaguId + '/leagueTable',
+        var league = $resource(Const.baseApiUrlFootballTable + '' + leaguId + '/leagueTable',
           {},
           {
             'get':{
